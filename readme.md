@@ -1,5 +1,7 @@
 # VVV Teamdrop
 
+![vvv-teamdrop](https://user-images.githubusercontent.com/307676/38929173-c4f260d2-430b-11e8-9624-fcf35b53c039.png)
+
 Export/import database and uploads from [VVV site]() to a shared Dropbox folder. Handy for sharing database and media between a team during development.
 
 ### Prerequisites
