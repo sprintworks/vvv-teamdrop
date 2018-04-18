@@ -6,9 +6,9 @@ Export/import database and uploads from [VVV site]() to a shared Dropbox folder.
 
 ### Prerequisites
 
-+ A shared Dropbox folder
++ A shared [Dropbox](https://www.dropbox.com) folder
 + [VVV](https://github.com/Varying-Vagrant-Vagrants/VVV)
-+ A WordPress site already setup, preferably using Bedrock.
++ A WordPress site already setup, preferably using [Bedrock](https://roots.io/bedrock/).
 
 ## Getting Started
 
