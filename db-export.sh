@@ -11,13 +11,14 @@ VVV_PATH=$(echo "$VVV_PATH")
 DROPBOX_PATH=$(echo "$DROPBOX_PATH")
 SQL_FILENAME=$(echo "$SQL_FILENAME")
 INCLUDE_UPLOADS_IN_EXPORT=$(echo "$INCLUDE_UPLOADS_IN_EXPORT")
+UPLOADS_PATH=$(echo "$UPLOADS_PATH")
 
 # 1. Make db backups and uploads zip
 ssh vagrant@${VVV_IP} "cd ${VVV_PATH} && wp db export --color ${SQL_FILENAME}.sql"
 
 if ${INCLUDE_UPLOADS_IN_EXPORT}
 then
-    ssh vagrant@${VVV_IP} "cd ${VVV_PATH} && zip -r ${SQL_FILENAME}-uploads.zip web/app/uploads"
+    ssh vagrant@${VVV_IP} "cd ${VVV_PATH} && zip -r ${SQL_FILENAME}-uploads.zip ${UPLOADS_PATH}"
 fi
 
 # 2. Copy db backup to Dropbox
